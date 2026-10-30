@@ -1,0 +1,15 @@
+<!-- Pegar dentro de <head> en index.html de la web (TCG). Solo afecta cuando se abre desde la app Android. -->
+<script>if(/ApexoraApp/.test(navigator.userAgent))document.documentElement.classList.add('native-app')</script>
+<style>
+/* Sensación de app: sin selección, sin resaltado al tocar, sin rebote ni zoom por doble toque */
+html.native-app,html.native-app body{
+  -webkit-user-select:none;user-select:none;
+  -webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;
+  overscroll-behavior:none;touch-action:manipulation;
+  background:#0b0910;
+}
+html.native-app img{-webkit-user-drag:none;user-drag:none}
+html.native-app input,html.native-app textarea{-webkit-user-select:text;user-select:text}
+/* Rendimiento: los blur/backdrop son lo más caro en un WebView; se simplifican solo en la app */
+html.native-app *{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+</style>

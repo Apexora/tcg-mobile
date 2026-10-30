@@ -1,0 +1,11 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Sin conexión</title>
+<style>
+html,body{margin:0;height:100%;background:radial-gradient(ellipse at 50% 30%,#2a1b4a,#0b0910 70%);color:#f6e6b4;font:700 18px system-ui,sans-serif;text-align:center;overflow:hidden;-webkit-user-select:none;user-select:none}
+.w{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+h1{margin:0;font-size:28px;letter-spacing:.14em}p{margin:0;opacity:.75;font-weight:500;font-size:15px}
+button{margin-top:10px;padding:14px 38px;font:800 18px system-ui;letter-spacing:.12em;color:#2b1a00;border:0;border-radius:14px;background:linear-gradient(#ffe27a,#f2a900);box-shadow:0 5px 0 #a56a00,0 10px 24px #0008;transition:transform .08s,box-shadow .08s}
+button:active{transform:translateY(4px);box-shadow:0 1px 0 #a56a00}
+.i{font-size:56px;animation:f 2s ease-in-out infinite}@keyframes f{50%{transform:translateY(-8px)}}
+</style></head><body><div class="w"><div class="i">📡</div><h1>SIN CONEXIÓN</h1><p>Cartas Alfa necesita internet para jugar.</p>
+<button onclick="location.replace('https://apexora.github.io/TCG/')">REINTENTAR</button></div>
+<script>addEventListener('online',()=>location.replace('https://apexora.github.io/TCG/'))</script></body></html>

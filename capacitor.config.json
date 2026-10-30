@@ -1,0 +1,28 @@
+{
+  "appId": "com.apexora.tcg",
+  "appName": "Cartas Alfa",
+  "webDir": "www",
+  "backgroundColor": "#0b0910",
+  "appendUserAgent": "ApexoraApp",
+  "server": {
+    "url": "https://apexora.github.io/TCG/",
+    "cleartext": false,
+    "errorPath": "error.html",
+    "allowNavigation": ["apexora.github.io", "*.firebaseapp.com", "*.googleapis.com", "*.firebaseio.com"]
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#0b0910"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1800,
+      "launchAutoHide": true,
+      "launchFadeOutDuration": 350,
+      "backgroundColor": "#0b0910",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false
+    }
+  }
+}
